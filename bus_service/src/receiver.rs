@@ -1,7 +1,7 @@
 
 use std::{io::{Read, Write}, os::unix::net::{UnixListener, UnixStream}, sync::{mpsc::{self, Sender}, Arc, Mutex}, thread};
 use ngtq::NGTQ;
-use ngtq_bus_service_models::{BusRequest, BusResponse, Task, TaskIdentifier};
+use bus_service_models::{BusRequest, BusResponse, Task, TaskIdentifier};
 
 pub struct Receiver {
 
